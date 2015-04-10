@@ -16,19 +16,19 @@ public static class AutoDeskConverter {
 	  */
 	public static Vector3 StringToVector3(string input)
 	{
-		string[] coords = input.Split("|"); 
+		string[] coords = input.Split("|"[0]); 
 		if (coords.Length == 3) 
 		{
 			return new Vector3( 
-					float.parse(coords[0]),
-					float.parse(coords[1]),
-					float.parse(coords[2])
+					float.Parse(coords[0]),
+					float.Parse(coords[1]),
+					float.Parse(coords[2])
 				);
 		}
 		else
 		{
 			Debug.LogError(input + "could not be casted to Vector3");
-			return Vector3.Zero;
+			return Vector3.zero;
 		}
 	}
 	
