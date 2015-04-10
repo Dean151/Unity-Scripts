@@ -17,12 +17,12 @@ public class LookAround : MonoBehaviour {
 	public float sensibility = 1.0f;
 	public bool inverseVertical = false;
 
-	void Start () {
+	private void Start () {
 		// Nothing to initialize \(^_^)/
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	protected void Update () 
 	{
 		float invFactor = inverseVertical ? 1.0f : -1.0f;
 		float v = sensibility * invFactor * verticalFactor * Input.GetAxis("Mouse Y");
