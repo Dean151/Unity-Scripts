@@ -8,6 +8,8 @@
 using UnityEngine;
 using System.Collections;
 
+
+// LookAround.cs NEEDED
 public class FreeCamera : LookAround {
 
 	// Use this for initialization
